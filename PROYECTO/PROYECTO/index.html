@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora De Tiro Vertical</title>
+    <style>
+        #tituloPrincipal {
+            color: #3b485f;
+        }
+
+        .tituloDefinicion {
+            font-size: 24px;
+        }
+
+        .titutoCaracteristica {
+            font-size: 24px;
+        }
+
+        .titutoFormulas {
+            font-size: 20px;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url("../imagenes/acuarela.jpg");
+        }
+
+        table, tr, td, th {
+            border: 1px solid #000;
+        }
+
+        caption {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 id="tituloPrincipal"><strong>Calculadora De Tiro Vertical</strong></h1>
+</header>
+<section>
+    <div>
+        <p>
+            Esta página sirve para resolver cualquier ejercicio del tipo tiro parabólico,
+            siempre y cuando se tenga alguno de estos parámetros para el cálculo del mismo:
+            Gravedad[g(9,81 m/s²)], Tiempo(t), Altura Máxima(h), Velocidad Inicial(Vi) y
+            Velocidad Final(Vf).
+        </p>
+        <table>
+            <caption>Carga de Datos</caption>
+            <form>
+                <tr>
+                    <td>Datos</td>
+                    <td>Unidad de medida</td>
+                </tr>
+                <tr>
+                    <td><label for="gravedad"> Gravedad: </label> <input type="number" name="gravedad"
+                                                                         placeholder="Gravedad" id="gravedad"></td>
+                    <td>m/s²</td>
+                </tr>
+                <tr>
+                    <td><label for="tiempo"> Tiempo: </label> <input type="number" name="tiempo" placeholder="Tiempo"
+                                                                     id="tiempo"></td>
+                    <td><label>
+                        <select>
+                            <option> Segundos</option>
+                            <option> Minutos</option>
+                            <option> Horas</option>
+                        </select>
+                    </label></td>
+                </tr>
+                <tr>
+                    <td><label for="altura"> Altura: </label> <input type="number" name="altura"
+                                                                     placeholder="Altura" id="altura"></td>
+                    <td>
+                        <label for="medida"></label>
+                        <select id="medida">
+                            <option value="centimetros"> Centímetros</option>
+                            <option value="metros"> Metros</option>
+                            <option value="kilometros"> Kilometros</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="velocidadInicial"> Velocidad Inicial: </label> <input type="number"
+                                                                                          name="velocidadInicial"
+                                                                                          placeholder="Velocidad Inicial"
+                                                                                          id="velocidadInicial"></td>
+                    <td>
+                        <label for="medida2"></label>
+                        <select id="medida2">
+                            <option value="m/s"> m/s</option>
+                            <option value="km/h"> km/h</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button"> Calcular</button>
+                    </td>
+                </tr>
+            </form>
+            <canvas id="canvas" width="200" height="100" style="border:1px">
+                canvas tag.
+            </canvas>
+    </div>
+    </table>
+    <p>
+    <h2 class="tituloDefinicion"> ¿Qué es el Tiro Vertical? </h2>
+    Tiro Vertical se trata de un movimiento rectilíneo uniforme variado, también
+    conocido como MRUV. En un tiro vertical, la velocidad cambia y existe una aceleración
+    que está dada por la acción de la gravedad. El tiro vertical, cuya dirección puede
+    ser descendente o ascendente, tiene una velocidad inicial que resulta diferente a cero.
+    El cuerpo en cuestión se lanza hacia arriba, impulsado con una cierta velocidad.
+    Luego regresa al punto de partida con la misma velocidad, aunque en un sentido contrario
+    al que tenía en el momento del lanzamiento.
+    </p>
+
+    <p>
+    <h3 class="titutoCaracteristica"> Características Del Tiro Vertical </h3>
+    El cuerpo lanzado en un tiro vertical sube y luego baja, regresando al punto de partida.
+    Cuando el cuerpo alcanzó la altura máxima, la velocidad resulta nula. En ese instante,
+    el cuerpo deja de subir e inicia su descenso. El tiempo que el cuerpo demora en llegar a la
+    altura máxima resulta idéntico al tiempo que tarda en volver a su punto de partida. Es
+    importante destacar que existen diversas ecuaciones que permiten medir diferentes magnitudes
+    vinculadas al tiro vertical. Estas ecuaciones trabajan con variables como la velocidad inicial,
+    la altura y la aceleración.
+    </p>
+    <p>
+    <h4 class="titutoFormulas"> Fórmulas de Tiro Vertical </h4>
+    </p>
+    <p>Velocidad Inical = Gravedad x Tiempo</p>
+    <p>Velocidad Inicial = √(2 x Gravedad x Altura)</p>
+    <p>Tiempo = Velocidad Inicial / Gravedad</p>
+    <p>Altura Maxima = Velocidad Inicial² / 2 x Gravedad</p>
+
+
+</section>
+<footer>
+    Autor: Cuello Juan Segundo
+</footer>
+</body>
+</html>
