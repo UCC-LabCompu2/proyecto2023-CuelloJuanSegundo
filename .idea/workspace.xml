@@ -6,18 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9daa8034-9cc5-49d9-aa03-8085f37b3710" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROYECTO/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROYECTO/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROYECTO/.idea/PROYECTO.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROYECTO/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROYECTO/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROYECTO/Skech/Sketch_pagina.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROYECTO/Wireframe/Wireframe_pagina.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROYECTO/imagenes/acuarela.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROYECTO/imagenes/azul.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROYECTO/imagenes/claros.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROYECTO/imagenes/linescolores.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROYECTO/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
