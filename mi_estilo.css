@@ -1,0 +1,32 @@
+#tituloPrincipal {
+    color: #3b485f;
+}
+
+.tituloDefinicion {
+    font-size: 24px;
+}
+
+.titutoCaracteristica {
+    font-size: 24px;
+}
+
+.titutoFormulas {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("imagenes/acuarela.jpg");
+}
+
+table, tr, td, th {
+    border: 1px solid #000;
+}
+
+caption {
+    font-size: 24px;
+}
+
+img{
+    width: 450px
+}
