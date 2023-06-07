@@ -8,6 +8,7 @@
     <meta content="TiroVertical, medidas, datos" name="palabras-claves">
     <link rel="shortcut icon" href="imagenes/favicon.ico">
     <link rel="stylesheet" href="mi_estilo.css" type="text/css">
+    <script type="text/javascript" src="misFunciones.js"></script>
 
 </head>
 <body>
@@ -21,64 +22,69 @@
             Gravedad[g(9,81 m/s²)], Tiempo(t), Altura Máxima(h), Velocidad Inicial(Vi) y
             Velocidad Final(Vf).
         </p>
-        <table>
-            <caption>Carga de Datos</caption>
+    <table>
+        <caption>Carga de Datos</caption>
+        <form>
+            <tr>
+                <td>Datos</td>
+                <td>Unidad de medida</td>
+            </tr>
+            <tr>
+                <td> Gravedad: 9,8 </td>
+                <td>m/s²</td>
+            </tr>
+            <tr>
+                <td><label for="tiempo"> Tiempo: </label> <input type="number" name="tiempo" placeholder="Tiempo"
+                                                                 onchange="calcularTirot()"
+                                                                 id="tiempo"></td>
+                <td> segundos </td>
+            </tr>
+            <tr>
+                <td><label for="altura"> Altura: </label> <input type="number" name="altura"
+                                                                 onchange="calcularTiroh(this.value)"
+                                                                 placeholder="Altura" id="altura"></td>
+                <td> metros </td>
+            </tr>
+            <tr>
+                <td><label for="velocidadInicial"> Velocidad Inicial: </label> <input type="number"
+                                                                                      name="velocidadInicial"
+                                                                                      onchange="calcularTirovi(this.value)"
+                                                                                      placeholder="Velocidad Inicial"
+                                                                                      id="velocidadInicial"></td>
+                <td> m/s </td>
+
+        </form>
+        <div class="centrado div_conver">
             <form>
-                <tr>
-                    <td>Datos</td>
-                    <td>Unidad de medida</td>
-                </tr>
-                <tr>
-                    <td><label for="gravedad"> Gravedad: </label> <input type="number" name="gravedad"
-                                                                         placeholder="Gravedad" id="gravedad"></td>
-                    <td>m/s²</td>
-                </tr>
-                <tr>
-                    <td><label for="tiempo"> Tiempo: </label> <input type="number" name="tiempo" placeholder="Tiempo"
-                                                                     id="tiempo"></td>
-                    <td><label>
-                        <select>
-                            <option> Segundos</option>
-                            <option> Minutos</option>
-                            <option> Horas</option>
-                        </select>
-                    </label></td>
-                </tr>
-                <tr>
-                    <td><label for="altura"> Altura: </label> <input type="number" name="altura"
-                                                                     placeholder="Altura" id="altura"></td>
-                    <td>
-                        <label for="medida"></label>
-                        <select id="medida">
-                            <option value="centimetros"> Centímetros</option>
-                            <option value="metros"> Metros</option>
-                            <option value="kilometros"> Kilometros</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="velocidadInicial"> Velocidad Inicial: </label> <input type="number"
-                                                                                          name="velocidadInicial"
-                                                                                          placeholder="Velocidad Inicial"
-                                                                                          id="velocidadInicial"></td>
-                    <td>
-                        <label for="medida2"></label>
-                        <select id="medida2">
-                            <option value="m/s"> m/s</option>
-                            <option value="km/h"> km/h</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button type="button"> Calcular</button>
-                    </td>
-                </tr>
+                <p>
+                    <label for="posicionX"> X </label> = <input id="posicionX" type="text" name="inp_x">
+                </p>
+                <p>
+                    <label for="posicionY"> Y </label> = <input id="posicionY" type="text" name="inp_y">
+
+                </p>
+                <button type="button" onclick="dibujarImagen(inp_x.value,inp_y.value)">
+                    Dibujar!
+                </button>
             </form>
-            <canvas id="canvas" width="200" height="100" style="border:1px">
-                canvas tag.
-            </canvas>
+        <canvas id="Mycanvas" width="500" height="500" style="border:1px">
+            canvas tag.
+        </canvas>
+        </div>
     </table>
+    <h2>Resultados</h2>
+    <p>
+        Tiempo: <input type="number" name="resultado_t" id="resultadoT" disabled>
+    </p>
+    <p>
+        Velocidad Inicial: <input type="number" name="resultado_vi" id="resultadoVI" disabled>
+    </p>
+    <p>
+        Altura: <input type="number" name="resultado_h" id="resultadoH" disabled>
+    </p>
+    <p>
+
+    </p>
     <p>
     <h2 class="tituloDefinicion"> ¿Qué es el Tiro Vertical? </h2>
     Tiro Vertical se trata de un movimiento rectilíneo uniforme variado, también
